@@ -29,6 +29,7 @@ public class MyServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Hello World!");
 		response.getWriter().append("Hello World from Amrit");
+		response.getWriter().append("Hello World from Rene");
 	}
 
 	/**
