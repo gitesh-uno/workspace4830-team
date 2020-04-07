@@ -44,7 +44,7 @@ public class InsertTeam extends HttpServlet {
      //    preparedStmt.setString(3, phone);
      //    preparedStmt.setString(4, address);
          
-         preparedStmt.execute();
+     //    preparedStmt.execute();
          connection.close();
       } catch (Exception e) {
          e.printStackTrace();
