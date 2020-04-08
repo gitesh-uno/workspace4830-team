@@ -66,8 +66,6 @@ public class SearchTeam extends HttpServlet {
             if (keyword.isEmpty() || userName.contains(keyword)) {
                out.println("ID: " + id + ", ");
                out.println("User: " + userName + "<br>");
-      //         out.println("Email: " + email + ", ");
-      //         out.println("Phone: " + phone + "<br>");
             }
       /*      
             else if (keyword.isEmpty() || email.contains(keyword)) 

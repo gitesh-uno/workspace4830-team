@@ -63,17 +63,11 @@ public class MyServletDB extends HttpServlet {
             String username = rs.getString("MYUSER");
             String password = rs.getString("PASSWORD");
             
-      //      String email = rs.getString("EMAIL");
-      //      String phone = rs.getString("PHONE");
-      //      String address = rs.getString("ADDRESS");
             
             response.getWriter().append("USER ID: " + id + ", ");
             response.getWriter().append("USER NAME: " + username + ", ");
             response.getWriter().append("PASSWORD: " + password + "<br>");
             
-      //      response.getWriter().append("USER EMAIL: " + email + ", ");
-      //      response.getWriter().append("USER PHONE: " + phone + ", ");
-      //      response.getWriter().append("USER ADDRESS: " + address + "<br>");
          }
       } catch (SQLException e) {
          e.printStackTrace();

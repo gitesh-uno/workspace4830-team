@@ -15,6 +15,7 @@ public class UtilPropTeam {
       prop.load(is);
    }
 
+   ////
    public static String getProp(String key) {
       return prop.getProperty(key).trim();
    }

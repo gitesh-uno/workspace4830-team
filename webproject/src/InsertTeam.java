@@ -25,9 +25,6 @@ public class InsertTeam extends HttpServlet {
       String userName = request.getParameter("userName");
       String password = request.getParameter("password");
       
- //     String email = request.getParameter("email");
- //     String phone = request.getParameter("phone");
- //     String address = request.getParameter("address");
 
       Connection connection = null;
       String insertSql = " INSERT INTO MyTableTeam (id, MYUSER, PASSWORD) values (default, ?, ?)";
@@ -40,11 +37,8 @@ public class InsertTeam extends HttpServlet {
          preparedStmt.setString(1, userName);
          preparedStmt.setString(2, password);
          
-     //    preparedStmt.setString(2, email);
-     //    preparedStmt.setString(3, phone);
-     //    preparedStmt.setString(4, address);
          
-     //    preparedStmt.execute();
+         preparedStmt.execute();
          connection.close();
       } catch (Exception e) {
          e.printStackTrace();

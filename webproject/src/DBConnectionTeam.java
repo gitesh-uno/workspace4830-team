@@ -54,6 +54,8 @@ public class DBConnectionTeam {
    }
 
    public static void getDBConnection(ServletContext context) {
+	  
+	   //servletContext
       servletContext = context;
       getDBConnection();
    }
