@@ -59,9 +59,6 @@ public class InsertTeam extends HttpServlet {
             "  <li><b>User Name</b>: " + userName + "\n" + //
             "  <li><b>Password</b>: " + password + "\n" + //
             
-      //      "  <li><b>Email</b>: " + email + "\n" + //
-      //      "  <li><b>Phone</b>: " + phone + "\n" + //
-      //      "  <li><b>Address</b>: " + address + "\n" + //
 
             "</ul>\n");
 
