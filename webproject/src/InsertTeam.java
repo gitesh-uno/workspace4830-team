@@ -28,16 +28,14 @@ public class InsertTeam extends HttpServlet {
 
       Connection connection = null;
       String insertSql = " INSERT INTO MyTableTeam (id, MYUSER, PASSWORD) values (default, ?, ?)";
- //    String insertSql = " INSERT INTO MyTableYadav0204 (id, MYUSER, EMAIL, PHONE, ADDRESS) values (default, ?, ?, ?, ?)";
-
+ 
       try {
          DBConnectionTeam.getDBConnection(getServletContext());
          connection = DBConnectionTeam.connection;
          PreparedStatement preparedStmt = connection.prepareStatement(insertSql);
          preparedStmt.setString(1, userName);
          preparedStmt.setString(2, password);
-         
-         
+                 
          preparedStmt.execute();
          connection.close();
       } catch (Exception e) {
@@ -57,8 +55,7 @@ public class InsertTeam extends HttpServlet {
             "<ul>\n" + //
 
             "  <li><b>User Name</b>: " + userName + "\n" + //
-            "  <li><b>Password</b>: " + password + "\n" + //
-            
+            "  <li><b>Password</b>: " + password + "\n" + //            
 
             "</ul>\n");
 

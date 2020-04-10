@@ -49,11 +49,11 @@ public class MyServletDB extends HttpServlet {
       }
       try {
          String selectSQL = "SELECT * FROM MyTableTeam";
-         String theUserName = "user%";
+   //      String theUserName = "user%";
          response.getWriter().println(selectSQL + "<br>");
          response.getWriter().println("------------------------------------------<br>");
          PreparedStatement preparedStatement = connection.prepareStatement(selectSQL);
-         preparedStatement.setString(1, theUserName);    
+  //       preparedStatement.setString(1, theUserName);    
          
          ResultSet rs = preparedStatement.executeQuery();
          while (rs.next()) {
@@ -64,7 +64,7 @@ public class MyServletDB extends HttpServlet {
             
             response.getWriter().append("USER ID: " + id + ", ");
             response.getWriter().append("USER NAME: " + username + ", ");
-            response.getWriter().append("PASSWORD: " + password + "<br>");
+            response.getWriter().append("USER PASSWORD: " + password + "<br>");
             
          }
       } catch (SQLException e) {
